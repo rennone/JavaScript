@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>BackboneTest</title>
+</head>
+<body>
+  <h1>Enemies List</h1>
+  <div id="enemies">    
+  </div>
+  <script type="text/template" id="enemy-template">
+    <%- name %>    	<image src= <%= target==1 ? "circle_32.png" : "tri_32.png" %>> </br>
+    <input type="button" value="攻撃する">     <input type="button" class="tage" value="targetにする">
+  </script>
+
+  <script src="js/underscore.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/backbone.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+    <!--
+	<input type="radio" name="target">
+
+    <!--

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>underscore.js</title>
+  </head>
+  <body>
+    <script src="jquery.js"></script>
+    <script src="underscore.js"></script>
+    <script>
+      (function(){
+      var x;
+      var user = {
+          name: 'ichiro',
+          score: 50,
+          web: 'http://www.c'
+      };
+      x = _.times(10, function(){
+      var usr = $.extend({},user);
+      return usr;
+      });
+//      console.log(user);
+      var tpl = "<li><%- name %> (<%- score %> )</li>";
+      console.log(x);
+      })();
+    </script>
+  </body>
+</html>
